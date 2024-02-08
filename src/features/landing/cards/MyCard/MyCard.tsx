@@ -24,8 +24,8 @@ const MyCard: React.FC = () => {
     <Card
       sx={{
         maxWidth: 645,
-        marginTop: 5,
-        marginLeft: 12,
+        mt: 5,
+        ml: 12,
         boxShadow: 20,
         borderRadius: 4,
       }}
@@ -39,15 +39,22 @@ const MyCard: React.FC = () => {
           <WavingHand />
           {MY_CARD_HEADING}
         </Typography>
-        <Typography sx={{ my: 2 }} variant="body2" color="text.secondary">
+        <Typography
+          sx={{ my: 2 }}
+          variant="body2"
+          color="text.secondary"
+          component="div"
+        >
           {MY_CARD_SUB_HEADER}
         </Typography>
-        <Typography variant="body2">{MY_CARD_BLURB}</Typography>
+        <Typography variant="body2" component="div">
+          {MY_CARD_BLURB}
+        </Typography>
         <Button
           onClick={() => {
             handleClick({ navigate });
           }}
-          sx={{ marginTop: 5 }}
+          sx={{ mt: 5 }}
           variant="contained"
         >
           {MY_CARD_BUTTON_TEXT}
