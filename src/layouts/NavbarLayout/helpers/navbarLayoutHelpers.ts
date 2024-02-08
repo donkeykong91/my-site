@@ -6,7 +6,7 @@ import {
   IHandleCloseNavMenuParams,
   IHandleOpenNavMenuParams,
 } from './types.ts';
-import { getPage } from '../utils/matchers.ts';
+import { getPage } from '../../../globals/utils/matchers.ts';
 
 /**
  * Opens the navigation menu when the user clicks on the `MenuIcon`. <br>

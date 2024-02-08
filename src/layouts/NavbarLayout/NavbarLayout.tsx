@@ -9,7 +9,7 @@ import {
   IconButton,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { LANDING, PAGES } from './constants.ts';
+import { LANDING, PAGES } from '../../globals/constants.ts';
 import React, { useState } from 'react';
 import {
   handleCloseNavMenu,
@@ -27,7 +27,7 @@ const NavbarLayout: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
 
   return (
-    <AppBar position="static">
+    <AppBar sx={{ backgroundColor: '#e7f1ff' }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -62,7 +62,7 @@ const NavbarLayout: React.FC = () => {
           </Box>
           <Box>
             <Button
-              sx={{ my: 2, color: 'white', display: 'block' }}
+              sx={{ my: 2, display: 'block' }}
               onClick={() => {
                 handleButtonClick({ page: LANDING, navigate });
               }}
@@ -80,7 +80,7 @@ const NavbarLayout: React.FC = () => {
             {PAGES.map((page, index) => (
               <Button
                 key={`button-page-${index}`}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, display: 'block' }}
                 onClick={() => {
                   handleButtonClick({ page, navigate });
                 }}
