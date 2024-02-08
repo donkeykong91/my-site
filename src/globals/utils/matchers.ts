@@ -5,15 +5,13 @@ import {
   LANDING,
   PROJECTS,
   RESUME,
-} from '../constants.ts';
-import {
   ABOUT_ME_PAGE,
   CONTACT_PAGE,
   FUN_PAGE,
   LANDING_PAGE,
   PROJECTS_PAGE,
   RESUME_PAGE,
-} from '../../../globals/constants.ts';
+} from '../constants.ts';
 import { GetPage, IGetPageParams } from './types.ts';
 
 /**
