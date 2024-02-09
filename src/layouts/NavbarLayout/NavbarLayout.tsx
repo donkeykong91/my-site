@@ -27,7 +27,10 @@ const NavbarLayout: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
 
   return (
-    <AppBar sx={{ backgroundColor: '#e7f1ff' }} position="static">
+    <AppBar
+      sx={{ backgroundColor: '#e7f1ff', borderRadius: 2 }}
+      position="static"
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
