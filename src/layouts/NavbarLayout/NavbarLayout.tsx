@@ -26,6 +26,7 @@ const NavbarLayout: React.FC = () => {
   const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = useState<HTMLElement | null>(null);
 
+  // TODO: Split
   return (
     <AppBar
       sx={{ backgroundColor: '#e7f1ff', borderRadius: 2 }}

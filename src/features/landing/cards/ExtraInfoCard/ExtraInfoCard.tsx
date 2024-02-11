@@ -6,13 +6,16 @@ import {
 } from './constants.ts';
 import { RocketLaunch } from '@mui/icons-material';
 
+/**
+ * Displays extra, longer, information about me and my experience in the card. <br>
+ * @constructor
+ */
 const ExtraInfoCard: React.FC = () => {
   return (
     <Card
       sx={{
         maxWidth: 600,
         maxHeight: 550,
-        ml: 15,
         mt: 20,
         borderRadius: 4,
         boxShadow: 20,

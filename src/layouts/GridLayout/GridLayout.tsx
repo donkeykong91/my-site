@@ -6,11 +6,11 @@ import { Outlet } from 'react-router-dom';
 
 const GridLayout: React.FC = () => {
   return (
-    <Grid container>
+    <Grid container display="flex">
       <Grid xs={12}>
         <NavbarLayout />
       </Grid>
-      <Grid sx={{ minHeight: '100vh' }} xs={12}>
+      <Grid sx={{ minHeight: '100vh', overflowX: 'hidden' }} xs={12}>
         <Outlet />
       </Grid>
       <Grid xs={12}>
