@@ -17,6 +17,11 @@ import {
 import { useNavigate } from 'react-router-dom';
 import { handleClick } from './helpers/myCardHelpers.ts';
 
+/**
+ * The card is mainly used to show my picture and give a small blurb <br>
+ * about myself. <br>
+ * @constructor
+ */
 const MyCard: React.FC = () => {
   const navigate = useNavigate();
 
@@ -25,15 +30,12 @@ const MyCard: React.FC = () => {
       sx={{
         maxWidth: 645,
         mt: 5,
-        ml: 12,
+        mb: 6,
         boxShadow: 20,
         borderRadius: 4,
       }}
     >
-      <CardMedia
-        sx={{ maxWidth: 645, height: 440 }}
-        image={meImage}
-      ></CardMedia>
+      <CardMedia sx={{ maxWidth: 645, height: 440 }} image={meImage} />
       <CardContent sx={{ backgroundColor: '#badbf4' }}>
         <Typography variant="h5" component="div">
           <WavingHand />

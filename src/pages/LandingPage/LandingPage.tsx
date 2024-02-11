@@ -1,15 +1,23 @@
 import React from 'react';
 import MyCard from '../../features/landing/cards/MyCard';
 import ExtraInfoCard from '../../features/landing/cards/ExtraInfoCard';
-import { Box } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 
-// TODO: Add Responsiveness (Stack)
+/**
+ * This page displays two cards. One with an image and a small blurb about <br>
+ * me. Another with a longer description of what I do. <br>
+ * @constructor
+ */
 const LandingPage: React.FC = () => {
   return (
-    <Box sx={{ display: 'flex' }}>
-      <MyCard />
-      <ExtraInfoCard />
-    </Box>
+    <Grid container columnSpacing={8} display="flex" justifyContent="center">
+      <Grid>
+        <MyCard />
+      </Grid>
+      <Grid>
+        <ExtraInfoCard />
+      </Grid>
+    </Grid>
   );
 };
 
