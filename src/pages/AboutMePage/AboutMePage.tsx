@@ -2,8 +2,13 @@ import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import { ABOUT_ME_PAGE_TITLE, CARD_AND_IMAGE_LIST } from './constants.ts';
 import CardsAndImages from './CardsAndImages.tsx';
+import React from 'react';
 
-const AboutMePage = () => {
+/**
+ * Displays detailed information about my experience in tech in life. <br>
+ * @constructor
+ */
+const AboutMePage: React.FC = () => {
   return (
     <>
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
