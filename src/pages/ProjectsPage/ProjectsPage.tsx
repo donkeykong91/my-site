@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
-import { PROJECTS_DATA } from './constants.ts';
+import { PROJECTS_DATA, PROJECTS_PAGE_TITLE } from './constants.ts';
 import ProjectCard from '../../features/projects/cards/ProjectCard';
 
 /**
@@ -11,7 +11,7 @@ const ProjectPage = () => {
   return (
     <>
       <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
-        <Typography variant="h3">Projects</Typography>
+        <Typography variant="h3">{PROJECTS_PAGE_TITLE}</Typography>
       </Box>
       <Grid
         container

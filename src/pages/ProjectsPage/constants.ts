@@ -5,6 +5,8 @@ import rebImage from '../../assets/re-blog.webp';
 import bsImage from '../../assets/barber-shop.webp';
 import resImage from '../../assets/re-site.webp';
 
+const PROJECTS_PAGE_TITLE = 'Projects';
+
 // Card Headers
 const PROJ_CARD_HYG_HEADER = 'Dental Hygienist Site';
 const PROJ_CARD_FL_HEADER = 'Freelancing Site';
@@ -38,7 +40,7 @@ const PROJ_CARD_GPT_SUB_BODY =
   'This terminator shoots down questions with answers.';
 const PROJ_CARD_REB_SUB_BODY =
   'Opinions on when to buy a house (read: buy a house today). ';
-const PROJ_CARD_BS_SUB_BODY = `What's that old saying? Cut you "hair" and get a job.`;
+const PROJ_CARD_BS_SUB_BODY = `What's that old saying? Cut your "hair" and get a job.`;
 const PROJ_CARD_RE_SUB_BODY =
   'This is where all the house-buying magic starts.';
 
@@ -87,4 +89,4 @@ const PROJECTS_DATA = [
   },
 ];
 
-export { PROJECTS_DATA };
+export { PROJECTS_DATA, PROJECTS_PAGE_TITLE };

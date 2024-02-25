@@ -1,10 +1,10 @@
-import { Box, Card, CardContent, Typography } from '@mui/material';
 import React from 'react';
 import {
   EXTRA_INFO_CARD_HEADING,
   EXTRA_INFO_CARD_BODY_TEXT,
 } from './constants.ts';
 import { RocketLaunch } from '@mui/icons-material';
+import InfoCard from '../../../../globals/ui/InfoCard';
 
 /**
  * Displays extra, longer, information about me and my experience in the card. <br>
@@ -12,8 +12,11 @@ import { RocketLaunch } from '@mui/icons-material';
  */
 const ExtraInfoCard: React.FC = () => {
   return (
-    <Card
-      sx={{
+    <InfoCard
+      cardHeader={EXTRA_INFO_CARD_HEADING}
+      cardBody={EXTRA_INFO_CARD_BODY_TEXT}
+      Icon={RocketLaunch}
+      cardSx={{
         maxWidth: 600,
         maxHeight: 550,
         mt: 20,
@@ -21,17 +24,9 @@ const ExtraInfoCard: React.FC = () => {
         boxShadow: 20,
         backgroundColor: '#9acdf6',
       }}
-    >
-      <CardContent>
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <RocketLaunch sx={{ fontSize: 100, justifyContent: 'center' }} />
-        </Box>
-        <Typography variant="h5" align="center" component="div">
-          {EXTRA_INFO_CARD_HEADING}
-        </Typography>
-        <Typography>{EXTRA_INFO_CARD_BODY_TEXT}</Typography>
-      </CardContent>
-    </Card>
+      boxSx={{ display: 'flex', justifyContent: 'center' }}
+      iconSx={{ fontSize: 100, justifyContent: 'center' }}
+    />
   );
 };
 
