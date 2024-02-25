@@ -38,7 +38,7 @@ const PROJ_CARD_GPT_SUB_BODY =
   'This terminator shoots down questions with answers.';
 const PROJ_CARD_REB_SUB_BODY =
   'Opinions on when to buy a house (read: buy a house today). ';
-const PROJ_CARD_BS_SUB_BODY = `What's that old saying? Cut you "hair" and get a job.`;
+const PROJ_CARD_BS_SUB_BODY = `What's that old saying? Cut your "hair" and get a job.`;
 const PROJ_CARD_RE_SUB_BODY =
   'This is where all the house-buying magic starts.';
 

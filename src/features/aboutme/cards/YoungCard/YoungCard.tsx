@@ -9,7 +9,6 @@ const YoungCard = () => {
       cardSx={{
         maxWidth: 600,
         maxHeight: 550,
-        mt: 20,
         borderRadius: 4,
         boxShadow: 20,
         backgroundColor: '#9acdf6',
