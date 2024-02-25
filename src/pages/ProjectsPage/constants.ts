@@ -5,6 +5,8 @@ import rebImage from '../../assets/re-blog.webp';
 import bsImage from '../../assets/barber-shop.webp';
 import resImage from '../../assets/re-site.webp';
 
+const PROJECTS_PAGE_TITLE = 'Projects';
+
 // Card Headers
 const PROJ_CARD_HYG_HEADER = 'Dental Hygienist Site';
 const PROJ_CARD_FL_HEADER = 'Freelancing Site';
@@ -87,4 +89,4 @@ const PROJECTS_DATA = [
   },
 ];
 
-export { PROJECTS_DATA };
+export { PROJECTS_DATA, PROJECTS_PAGE_TITLE };
