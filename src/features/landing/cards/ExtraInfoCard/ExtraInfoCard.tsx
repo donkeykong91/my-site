@@ -25,7 +25,7 @@ const ExtraInfoCard: React.FC = () => {
         backgroundColor: '#9acdf6',
       }}
       boxSx={{ display: 'flex', justifyContent: 'center' }}
-      iconSx={{ fontSize: 100, justifyContent: 'center' }}
+      iconSx={{ fontSize: 100, justifyContent: 'center', color: '#2a9bf6' }}
     />
   );
 };
