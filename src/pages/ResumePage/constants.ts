@@ -1,3 +1,4 @@
+const RESUME_PAGE_TITLE = 'Resume';
 const NAME = 'Daryl Occ';
 const CONTACT_AND_LOCATION = `Tel: 714.xxx.xxxx
       Westminster, CA 92683
@@ -53,4 +54,5 @@ export {
   COMPANY_NAME_AND_LOCATION_AND_DURATION,
   POSITION,
   DETAILS,
+  RESUME_PAGE_TITLE,
 };
