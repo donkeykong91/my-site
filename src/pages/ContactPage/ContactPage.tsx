@@ -29,17 +29,17 @@ const ContactPage: React.FC = () => {
         height="100vh"
       >
         <a href={EMAIL_LINK}>
-          <IconButton sx={{ color: 'black' }}>
+          <IconButton aria-label="contact email" sx={{ color: 'black' }}>
             <EmailIcon sx={{ fontSize: 150 }} />
           </IconButton>
         </a>
         <a href={GH_LINK} target="_blank" rel="noopener noreferrer">
-          <IconButton sx={{ color: '#cbdae6' }}>
+          <IconButton sx={{ color: '#cbdae6' }} aria-label="view github">
             <GitHubIcon sx={{ fontSize: 150 }} />
           </IconButton>
         </a>
         <a href={LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
-          <IconButton sx={{ color: '#0a66c2' }}>
+          <IconButton sx={{ color: '#0a66c2' }} aria-label="view linkedin">
             <LinkedInIcon sx={{ fontSize: 150 }} />
           </IconButton>
         </a>
