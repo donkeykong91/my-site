@@ -9,6 +9,9 @@
  * **`body`**: The subtitle displayed in the lower region of the card <br>
  * (directly below the subtitle). <br>
  * **`image`**: The main attraction of the card displayed in the middle. <br>
+ * **`tooltip`**: Extra tidbit of information. <br>
+ * **`link`**: Optional. The GitHub link to the project. <br>
+ * **`ariaLabel`**: Optional. A11y referring to the GitHub project's link. <br>
  */
 type Project = {
   header: string;
@@ -16,6 +19,9 @@ type Project = {
   subTitle: string;
   body: string;
   image: string;
+  tooltip: string;
+  link?: string;
+  ariaLabel?: string;
 };
 
 /**

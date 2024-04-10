@@ -1,12 +1,16 @@
 import React from 'react';
 import {
   Card,
+  CardActions,
   CardContent,
   CardHeader,
   CardMedia,
+  IconButton,
+  Tooltip,
   Typography,
 } from '@mui/material';
 import { IProjectCardParams, ProjectCardProps } from './types.ts';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 /**
  * Displays the project card with header, title, image, subtitle, and body. <br>
@@ -29,6 +33,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           {project.body}
         </Typography>
       </CardContent>
+      <CardActions>
+        <Tooltip
+          title={project.tooltip}
+          arrow
+          placement={project?.link ? 'right' : 'left'}
+        >
+          <a href={project?.link} target="_blank" rel="noopener noreferrer">
+            <IconButton
+              disabled={!project?.link}
+              aria-label={project?.ariaLabel}
+            >
+              <GitHubIcon />
+            </IconButton>
+          </a>
+        </Tooltip>
+      </CardActions>
     </Card>
   );
 };
