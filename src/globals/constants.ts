@@ -13,7 +13,7 @@ const PROJECTS = 'Projects';
 const CONTACT = 'Contact';
 const RESUME = 'Resume';
 const FUN = 'Fun Stuff I Like To Do';
-const PAGES = [RESUME, PROJECTS, CONTACT, ABOUT_ME];
+const PAGES = [PROJECTS, CONTACT, ABOUT_ME];
 
 export {
   LANDING_PAGE,
