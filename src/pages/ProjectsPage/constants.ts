@@ -46,12 +46,14 @@ const PROJ_CARD_RE_SUB_BODY =
 
 // Project Github Links
 const GH_AI_CHATBOT_PROJ_LINK = 'https://github.com/donkeykong91/my-ai-chatbot';
+const GH_HYG_PROJ_LINK =
+  'https://github.com/donkeykong91/pearly-whites-website';
 
 // Project Aria Labels
 const GH_AI_CHATBOT_ARIA_LABEL = 'visit ai chatbot github';
 
 // Project ToolTips
-const HYG_TOOL_TIP = 'In Progress - Keep Flossing, Though!';
+const HYG_TOOL_TIP = 'Time to pay the (Tooth) Piper!';
 const FL_TOOL_TIP = `In Progress - It's a Feature; Not a Bug.`;
 const GPT_TOOL_TIP = 'The Sleeper has Awoken!';
 const REB_TOOL_TIP = 'In Progress - Controversial Take: Buy Now';
@@ -65,6 +67,7 @@ const PROJECTS_DATA = [
     subTitle: PROJ_CARD_HYG_SUB_TITLE,
     body: PROJ_CARD_HYG_SUB_BODY,
     image: dhImage,
+    link: GH_HYG_PROJ_LINK,
     tooltip: HYG_TOOL_TIP,
   },
   {
