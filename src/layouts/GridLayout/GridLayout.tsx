@@ -10,7 +10,16 @@ const GridLayout: React.FC = () => {
       <Grid xs={12}>
         <NavbarLayout />
       </Grid>
-      <Grid sx={{ minHeight: '100vh', overflowX: 'hidden' }} xs={12}>
+      <Grid
+        component="main"
+        sx={{
+          minHeight: '100vh',
+          overflowX: 'hidden',
+          px: { xs: 2, md: 5 },
+          py: { xs: 4, md: 7 },
+        }}
+        xs={12}
+      >
         <Outlet />
       </Grid>
       <Grid xs={12}>

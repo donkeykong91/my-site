@@ -10,6 +10,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { LANDING, PAGES } from '../../globals/constants.ts';
+import { GLASS_BUTTON_SX, GLASS_NAV_SX } from '../../theme/glass.ts';
 import React, { useState } from 'react';
 import {
   handleCloseNavMenu,
@@ -28,14 +29,12 @@ const NavbarLayout: React.FC = () => {
 
   // TODO: Split
   return (
-    <AppBar
-      sx={{ backgroundColor: '#e7f1ff', borderRadius: 2 }}
-      position="static"
-    >
+    <AppBar sx={GLASS_NAV_SX} position="sticky" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
+              sx={{ color: '#172033' }}
               onClick={(event: React.MouseEvent<HTMLElement>) => {
                 handleOpenNavMenu({ event, setAnchorElNav });
               }}
@@ -60,13 +59,21 @@ const NavbarLayout: React.FC = () => {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {PAGES.map((page, index) => (
-                <MenuItem key={`page-${index}`}>{page}</MenuItem>
+                <MenuItem
+                  key={`page-${index}`}
+                  onClick={() => {
+                    handleButtonClick({ page, navigate });
+                    handleCloseNavMenu({ setAnchorElNav });
+                  }}
+                >
+                  {page}
+                </MenuItem>
               ))}
             </Menu>
           </Box>
           <Box>
             <Button
-              sx={{ my: 2, display: 'block' }}
+              sx={{ ...GLASS_BUTTON_SX, my: 1, display: 'block' }}
               onClick={() => {
                 handleButtonClick({ page: LANDING, navigate });
               }}
@@ -79,12 +86,13 @@ const NavbarLayout: React.FC = () => {
               flexGrow: 1,
               display: { xs: 'none', md: 'flex' },
               justifyContent: 'flex-end',
+              gap: 1,
             }}
           >
             {PAGES.map((page, index) => (
               <Button
                 key={`button-page-${index}`}
-                sx={{ my: 2, display: 'block' }}
+                sx={{ ...GLASS_BUTTON_SX, my: 1, display: 'block' }}
                 onClick={() => {
                   handleButtonClick({ page, navigate });
                 }}

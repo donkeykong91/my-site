@@ -1,3 +1,3 @@
-import LandingPage from "./LandingPage.tsx";
+import LandingPage from './LandingPage.tsx';
 
 export default LandingPage;

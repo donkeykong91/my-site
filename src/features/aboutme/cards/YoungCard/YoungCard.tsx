@@ -7,11 +7,7 @@ const YoungCard = () => {
       cardHeader={YOUNG_CARD_HEADER}
       cardBody={YOUNG_CARD_BODY}
       cardSx={{
-        maxWidth: 600,
-        maxHeight: 550,
-        borderRadius: 4,
-        boxShadow: 20,
-        backgroundColor: '#9acdf6',
+        maxWidth: 620,
       }}
     />
   );

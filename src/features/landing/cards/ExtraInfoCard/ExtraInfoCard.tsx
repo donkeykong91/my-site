@@ -17,15 +17,16 @@ const ExtraInfoCard: React.FC = () => {
       cardBody={EXTRA_INFO_CARD_BODY_TEXT}
       Icon={RocketLaunch}
       cardSx={{
-        maxWidth: 600,
-        maxHeight: 550,
-        mt: 20,
-        borderRadius: 4,
-        boxShadow: 20,
-        backgroundColor: '#9acdf6',
+        maxWidth: 620,
+        mt: { xs: 2, md: 14 },
       }}
       boxSx={{ display: 'flex', justifyContent: 'center' }}
-      iconSx={{ fontSize: 100, justifyContent: 'center', color: '#2a9bf6' }}
+      iconSx={{
+        fontSize: 100,
+        justifyContent: 'center',
+        color: 'rgba(69, 126, 255, 0.88)',
+        filter: 'drop-shadow(0 12px 24px rgba(69, 126, 255, 0.32))',
+      }}
     />
   );
 };

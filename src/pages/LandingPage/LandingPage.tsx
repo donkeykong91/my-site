@@ -10,7 +10,14 @@ import Grid from '@mui/material/Unstable_Grid2';
  */
 const LandingPage: React.FC = () => {
   return (
-    <Grid container columnSpacing={8} display="flex" justifyContent="center">
+    <Grid
+      container
+      columnSpacing={8}
+      rowGap={4}
+      display="flex"
+      justifyContent="center"
+      alignItems="flex-start"
+    >
       <Grid>
         <MyCard />
       </Grid>

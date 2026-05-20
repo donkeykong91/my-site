@@ -1,5 +1,6 @@
 import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { InfoCardProps, InfoCardParams } from './types';
+import { GLASS_CARD_SX } from '../../../theme/glass.ts';
 import React from 'react';
 
 /**
@@ -26,18 +27,27 @@ const InfoCard: React.FC<InfoCardProps> = ({
   imageSx,
 }: InfoCardParams) => {
   return (
-    <Card sx={{ ...cardSx }}>
-      <CardContent>
+    <Card sx={{ ...(GLASS_CARD_SX as object), ...(cardSx as object) }}>
+      <CardContent
+        sx={{ position: 'relative', zIndex: 1, p: { xs: 3, md: 4 } }}
+      >
         {Icon && (
           <Box sx={{ ...boxSx }}>
             <Icon sx={{ ...iconSx }} />
           </Box>
         )}
         {image && <CardMedia sx={{ ...imageSx }} image={image} />}
-        <Typography variant="h5" align="center" component="div">
+        <Typography
+          variant="h5"
+          align="center"
+          component="div"
+          sx={{ mb: 2, fontWeight: 800, letterSpacing: '-0.03em' }}
+        >
           {cardHeader}
         </Typography>
-        <Typography>{cardBody}</Typography>
+        <Typography sx={{ color: 'rgba(23, 32, 51, 0.74)', lineHeight: 1.75 }}>
+          {cardBody}
+        </Typography>
       </CardContent>
     </Card>
   );
